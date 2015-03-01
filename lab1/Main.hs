@@ -4,7 +4,7 @@ module Main where
 --naive
 factorial n = if n <= 0
   then 1
-  --Operator application has lower precedence than operator application
+  --Operator application has lower precedence than function application
   --notice the presence and absence of parenthesis below
   else n * factorial (n-1)
 
