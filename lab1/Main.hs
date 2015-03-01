@@ -31,6 +31,8 @@ fib' n = let
     -- first two params are the fib(m) and fib(m+1), based on which
     -- fib(m+2) can be determined in one step
     -- the third param is m itself
+    -- notice how n is available in looper's body, without being explicitely
+    -- sent as an argument
     looper fm fmpo m = if (n == m)
       then fm
       else looper fmpo (fm+fmpo) (m+1)
